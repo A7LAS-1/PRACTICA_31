@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Visualización de Datos Sísmicos</title>
+    <style>
+        :root {
+            /* Colores principales */
+            --primary-color: #682444; /* Tono guinda elegante */
+            --accent-color: #e74c3c; /* Rojo para temática sísmica */
+            --bg-color: #f0f2f5;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+        }
+        
+        .container {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            padding: 40px;
+            max-width: 550px;
+            width: 90%;
+            border-top: 6px solid var(--primary-color);
+        }
+        
+        .icon {
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 10px;
+            animation: pulse 2s infinite;
+        }
+        
+        h1 {
+            color: var(--text-color);
+            text-align: center;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 5px;
+            color: #666;
+        }
+        
+        .project-title {
+            text-align: center;
+            font-size: 26px;
+            color: var(--primary-color);
+            font-weight: 800;
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 2px dashed #e1e1e1;
+            line-height: 1.3;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .team-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .team-member {
+            background: #fafafa;
+            border: 1px solid #eaeaea;
+            margin-bottom: 12px;
+            padding: 16px 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-color: var(--primary-color);
+            background: #fff;
+        }
+        
+        .member-name {
+            font-weight: 600;
+            color: #444;
+            font-size: 15px;
+        }
+        
+        .member-id {
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(104, 36, 68, 0.3);
+        }
+
+        /* Animación sutil para el ícono */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🇲🇽 📡</div>
+        <h1>Proyecto Asignado</h1>
+        <div class="project-title">Sistema de Visualización de Datos Sísmicos de México</div>
+        
+        <h2>👨‍💻 Equipo de Desarrollo</h2>
+        <ul class="team-list">
+            <li class="team-member">
+                <span class="member-name">Bravo Mina Liam Valapai</span>
+                <span class="member-id">2025630810</span>
+            </li>
+            <li class="team-member">
+                <span class="member-name">Navarro Domínguez Antonio</span>
+                <span class="member-id">2025630725</span>
+            </li>
+            <li class="team-member">
+                <span class="member-name">Ávalos Hernández Joshua Jasiel</span>
+                <span class="member-id">2025630798</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
